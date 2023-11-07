@@ -1,0 +1,99 @@
+/************************************************************************************************************************************************
+************************************************************************************************************************************************
+************************************************************************
+
+Filename: swiper.css
+Author: Lizbeth Castaneda
+Copyright: 2023 - All rights reserved
+
+************************************************************************************************************************************************
+************************************************************************************************************************************************
+************************************************************************/
+body {
+    background-color: darkblue;
+}
+
+header {
+    font-size: 40px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 600px; /* Adjust to your desired width */
+    height: 500px;
+    margin: 0 auto;
+}
+
+
+
+.swiper-slide {
+text-align: center;
+padding: 20px;
+background-color: #069bf7;
+border: 15px solid #ddd;
+font-size: 30px;
+line-height: 2em;
+text-align: left;
+
+
+display: flex;
+flex-direction: column;
+}
+
+footer {
+    background-color: blanchedalmond;
+    height: 100%;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+/**********************Media Query Above 601 px ******************************************/
+@media screen and (min-width: 601px) {
+    body {
+        background-color: burlywood;
+    }
+
+    .swiper-slide {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+   
+
+    input[type="text"],
+    input[type="email"],
+    input[type="phone"],
+    textarea {
+        flex: 2;
+    }
+}
+
+/*************************************Media Query 600 px and Below*********************************/
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightcoral;
+    }
+   
+    header {
+        width: 100% auto;
+    }
+    .swiper-slide {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        font-size: 1.1em;
+    }
+    }
+
+
+
+
+
